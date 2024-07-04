@@ -24,9 +24,9 @@
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": ">=8.0",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "*",
         "knplabs/github-api": "^3.0",
         "http-interop/http-factory-guzzle": "^1.0"
     },
@@ -45,5 +45,10 @@
         "cs-fix": "Check and fix coding styles using PHP CS Fixer",
         "phpstan": "Execute PHPStan analysis",
         "test": "Launch PHPUnit test suite"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
